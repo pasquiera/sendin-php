@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(229, 232, 235);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper .icon{
+    height: 110px;
+    width: 110px;
+    background: red;
+    line-height: 110px;
+    border-radius: 50%;
+    font-size: 55px;
+    color: #fff;
+    background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
+}
+
+.wrapper .content{
+    margin: 20px 0;
+}
+
+.content header{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.content p{
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -3px;
+}
+
+form{
+    width: 98%;
+}
+
+form .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+form .field input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 20px;
+    outline: none;
+    font-size: 17px;
+
+}
+
+form .text-field input{
+    transition: .3s;
+}
+
+form .text-field input:focus {
+    border-color: #000;
+}
+
+form .btn{
+    height: 47px;
+}
+
+form .btn input{
+    background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
+    color: #fff;
+    font-size: 19px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.wrapper .text{
+    margin-top: 5px;
+}
+
+.alert{
+    margin: -9px 0 12px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.alert.error{
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.alert.success{
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
